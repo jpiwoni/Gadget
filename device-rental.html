@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Rental Form</title>
+</head>
+<body>
+    <h1>Device Rental Form</h1>
+    <form action="device-rental.php" method="POST">
+        <label for="deviceName">Device Name:</label>
+        <input type="text" id="deviceName" name="deviceName" required>
+        <br><br>
+
+        <label for="personName">Person Name:</label>
+        <input type="text" id="personName" name="personName" required>
+        <br><br>
+
+        <label for="beginDate">Begin Date:</label>
+        <input type="datetime-local" id="beginDate" name="beginDate" required>
+        <br><br>
+
+        <label for="endDate">End Date:</label>
+        <input type="datetime-local" id="endDate" name="endDate" required>
+        <br><br>
+
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
